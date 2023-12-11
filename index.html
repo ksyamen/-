@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계절의 변화</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        section {
+            width: 50vw;
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            overflow: hidden;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        section.spring {
+            background-image: url('봄.webp'); /* 봄 이미지 경로로 수정하세요 */
+            top: 0;
+            left: 0;
+            background-color: #FFD9EC; /* 연한 핑크색 배경 */
+        }
+        section.summer {
+            background-image: url('여름.jpg'); /* 여름 이미지 경로로 수정하세요 */
+            top: 0;
+            left: 50vw;
+            background-color: #FFFFCC; /* 연한 노란색 배경 */
+        }
+        section.autumn {
+            background-image: url('가을.jpg'); /* 가을 이미지 경로로 수정하세요 */
+            top: 50vh;
+            left: 0;
+            background-color: #D2B48C; /* 연한 갈색 배경 */
+        }
+        section.winter {
+            background-image: url('겨울.jpg'); /* 겨울 이미지 경로로 수정하세요 */
+            top: 50vh;
+            left: 50vw;
+            background-color: #FFFFFF; /* 흰색 배경 */
+        }
+        h2 {
+            margin-top: 0;
+            color: #87CEEB; /* 하늘색 글씨 */
+        }
+        p {
+            color: #000000; /* 진한 검정색 글씨 */
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a href="봄페이지.html">
+        <section class="spring">
+            <h2>봄 (Spring)</h2>
+            <p>봄에는 꽃이 피고 나무가 싹트는 시기입니다. 온화한 기온과 함께 자연은 생기를 뿜어냅니다.</p>
+        </section>
+    </a>
+
+    <a href="여름페이지.html">
+        <section class="summer">
+            <h2>여름 (Summer)</h2>
+            <p>여름은 더워지는 계절로, 햇볕이 강하게 내리쬐고 해변이나 수영장에서 즐거운 시간을 보낼 수 있습니다.</p>
+        </section>
+    </a>
+
+    <a href="가을페이지.html">
+        <section class="autumn">
+            <h2>가을 (Autumn)</h2>
+            <p>가을에는 나뭇잎이 빛깔깔하게 물들고, 과일이 풍성하게 열리는 때입니다. 시원한 바람이 불면서 쾌적한 날씨가 이어집니다.</p>
+        </section>
+    </a>
+
+    <a href="겨울페이지.html">
+        <section class="winter">
+            <h2>겨울 (Winter)</h2>
+            <p>겨울은 추운 계절로 눈이 내리기도 하며, 크리스마스와 연말연시를 함께하는 특별한 시기입니다.</p>
+        </section>
+    </a>
+
+    <footer>
+        <p>&copy; 2023 계절의 변화 웹페이지</p>
+    </footer>
+</body>
+</html>
