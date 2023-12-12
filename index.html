@@ -24,7 +24,7 @@
             cursor: pointer;
         }
         section.spring {
-            background-image: url('봄.webp'); /* 봄 이미지 경로로 수정하세요 */
+            background-image: url('봄.jpg'); /* 봄 이미지 경로로 수정하세요 */
             top: 0;
             left: 0;
             background-color: #FFD9EC; /* 연한 핑크색 배경 */
@@ -66,7 +66,7 @@
     </style>
 </head>
 <body>
-    <a href="봄페이지.html">
+    <a href="#" onclick="showImage('봄.jpg')">
         <section class="spring">
             <h2>봄 (Spring)</h2>
             <p>봄에는 꽃이 피고 나무가 싹트는 시기입니다. 온화한 기온과 함께 자연은 생기를 뿜어냅니다.</p>
@@ -106,7 +106,12 @@
             videoWindow.document.write('<video width="100%" height="100%" controls autoplay><source src="' + videoUrl + '" type="video/mp4"></video>');
             videoWindow.document.close();
         }
+
+        function showImage(imageUrl) {
+            var imageWindow = window.open('', '_blank');
+            imageWindow.document.write('<img src="' + imageUrl + '" style="width: 100%; height: 100%;" />');
+            imageWindow.document.close();
+        }
     </script>
 </body>
 </html>
-
