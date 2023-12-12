@@ -87,18 +87,12 @@
         </section>
     </a>
 
-    <a href="겨울페이지.html">
-        <section class="winter">
-            <h2>겨울 (Winter)</h2>
-            <p>겨울은 추운 계절로 눈이 내리기도 하며, 크리스마스와 연말연시를 함께하는 특별한 시기입니다.</p>
+    <a href="#" onclick="playVideo()">
+        <section id="webpage-section">
+            <h2>2023 계절의 변화 웹페이지</h2>
+            <p>클릭하여 웹페이지 동영상을 재생하세요.</p>
         </section>
     </a>
-
-    <!-- 동영상 추가 -->
-    <section id="webpage-section" onclick="playVideo()">
-        <h2>2023 계절의 변화 웹페이지</h2>
-        <p>클릭하여 웹페이지 동영상을 재생하세요.</p>
-    </section>
 
     <footer>
         <p>&copy; 2023 계절의 변화 웹페이지</p>
@@ -108,7 +102,9 @@
     <script>
         function playVideo() {
             var videoUrl = 'https://www.example.com/your-video.mp4';
-            window.open(videoUrl, '_blank');
+            var videoWindow = window.open('', '_blank');
+            videoWindow.document.write('<video width="100%" height="100%" controls autoplay><source src="' + videoUrl + '" type="video/mp4"></video>');
+            videoWindow.document.close();
         }
     </script>
 </body>
