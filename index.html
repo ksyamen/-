@@ -94,8 +94,22 @@
         </section>
     </a>
 
+    <!-- 동영상 추가 -->
+    <section id="webpage-section" onclick="playVideo()">
+        <h2>2023 계절의 변화 웹페이지</h2>
+        <p>클릭하여 웹페이지 동영상을 재생하세요.</p>
+    </section>
+
     <footer>
         <p>&copy; 2023 계절의 변화 웹페이지</p>
     </footer>
+
+    <!-- 동영상 재생 스크립트 추가 -->
+    <script>
+        function playVideo() {
+            var videoUrl = 'https://www.example.com/your-video.mp4';
+            window.open(videoUrl, '_blank');
+        }
+    </script>
 </body>
 </html>
